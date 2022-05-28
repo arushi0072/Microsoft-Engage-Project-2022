@@ -47,7 +47,7 @@ label.pack(pady=0)
 
 
 
-message = tk.Label(window, text="Face-Recognition-Based-Attendance-Management-System" ,bg="#e94c3d"  ,fg="#474747"  ,width=50  ,height=3,font=('times', 30, 'italic bold underline')) 
+message = tk.Label(window, text="Face-Recognition-Based-Attendance-Management-System" ,bg="#e94c3d"  ,fg="#474747"  ,width=50  ,height=3,font=('times', 30, 'italic bold underline'),) 
 
 message.place(x=110, y=20)
 
@@ -230,14 +230,14 @@ clearButton = tk.Button(window, text="Clear", command=clear  ,fg="#474747"  ,bg=
 clearButton.place(x=890, y=200)
 clearButton2 = tk.Button(window, text="Clear", command=clear2  ,fg="#474747"  ,bg="#e94c3d"  ,width=20  ,height=2, activebackground = "Red" ,font=('times', 15, ' bold italic '))
 clearButton2.place(x=890, y=300)    
-takeImg = tk.Button(window, text="Take Images", command=TakeImages  ,fg="#474747"  ,bg="#e94c3d"  ,width=20  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold  italic '))
-takeImg.place(x=200, y=500)
-trainImg = tk.Button(window, text="Train Images", command=TrainImages  ,fg="#474747"  ,bg="#e94c3d"  ,width=20  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold italic '))
-trainImg.place(x=500, y=500)
-trackImg = tk.Button(window, text="Track Images", command=TrackImages  ,fg="#474747"  ,bg="#e94c3d"  ,width=20  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold italic '))
-trackImg.place(x=800, y=500)
-quitWindow = tk.Button(window, text="Quit", command=window.destroy  ,fg="#474747"  ,bg="#e94c3d"  ,width=20  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold italic '))
-quitWindow.place(x=1100, y=500)
+takeImg = tk.Button(window, text="Take Images", command=TakeImages  ,fg="#474747"  ,bg="#e94c3d"  ,width=15  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold  italic '))
+takeImg.place(x=190, y=500)
+trainImg = tk.Button(window, text="Train Images", command=TrainImages  ,fg="#474747"  ,bg="#e94c3d"  ,width=15  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold italic '))
+trainImg.place(x=470, y=500)
+trackImg = tk.Button(window, text="Track Images", command=TrackImages  ,fg="#474747"  ,bg="#e94c3d"  ,width=15  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold italic '))
+trackImg.place(x=710, y=500)
+quitWindow = tk.Button(window, text="Quit", command=window.destroy  ,fg="#474747"  ,bg="#e94c3d"  ,width=15  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold italic '))
+quitWindow.place(x=990, y=500)
 
 copyWrite = tk.Text(window, background=window.cget("background"), borderwidth=0,font=('times', 30, 'italic bold underline'))
 copyWrite.tag_configure("superscript", offset=10)
